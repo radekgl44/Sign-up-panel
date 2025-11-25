@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-color: #131313;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.worldmap img {
+    position: absolute;
+    bottom: 5vh;
+    left: 15vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.panelbg {
+    position: relative;
+    top: 430px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 500px;
+    background: #00000014;
+    backdrop-filter: blur(2px);
+    border-radius: 0;
+    border: 1px solid #ffffff20;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    color: white;
+    z-index: 2;
+}
+
+#signuppaneltitle {
+    font-family: 'roboto flex', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    color: white;
+    opacity: 0.4;
+    bottom: 33vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+}
+
+.signuppanel input {
+    width: 220px;
+    height: 40px;
+    position: absolute;
+    color: white;
+    background-color: black;
+    border: 2px black solid;
+    opacity: 0.5;
+    border-radius: 50px;
+    font-family: 'roboto flex', sans-serif;
+    font-size: 17px;
+}
+
+#nameid {
+    z-index: 2;
+    left: 720px;
+    top: 300px;
+    position: absolute;
+}
+
+#surnameid {
+    z-index: 2;
+    left: 970px;
+    top: 300px;
+    position: absolute;
+}
+
+#emailid {
+    z-index: 2;
+    width: 470px;
+    top: 380px;
+    left: 720px;
+    position: absolute;
+}
+
+#passwordid {
+    z-index: 2;
+    top: 460px;
+    left: 720px;
+    position: absolute;
+}
+
+#passwordcheckbox {
+    z-index: 3;
+    width: 17px;
+    left: 910px;
+    bottom: 445px;
+    position: absolute;
+    display: none;
+}
+
+.passwordcheckboximg {
+        z-index: 4;
+        width: 25px;
+        height: 25px;
+        left: 910px;
+        top: 470px;
+        position: absolute;
+        background-image: url(https://cdn-icons-png.flaticon.com/128/10812/10812267.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        filter: invert(1);
+        opacity: 0.4;
+}
+
+#passwordcheckbox:checked + .passwordcheckboximg {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/159/159604.png);
+}
+
+#confirmpasswordid {
+    z-index: 2;
+    left: 970px;
+    top: 460px;
+    position: absolute;
+}
+
+#confirmpasswordcheckbox {
+    z-index: 3;
+    width: 17px;
+    left: 1160px;
+    bottom: 445px;
+    position: absolute;
+    display: none;
+}
+
+.confirmpasswordcheckboximg {
+        z-index: 4;
+        width: 25px;
+        height: 25px;
+        left: 1155px;
+        top: 470px;
+        position: absolute;
+        background-image: url(https://cdn-icons-png.flaticon.com/128/10812/10812267.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        filter: invert(1);
+        opacity: 0.4;
+}
+
+#confirmpasswordcheckbox:checked + .confirmpasswordcheckboximg {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/159/159604.png);
+}
+
+.loginbutton {
+    z-index: 2;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    font-family: 'roboto flex', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    left: 740px;
+    bottom: 420px;
+    position: absolute;
+}
+
+
+#termsandpolicyid {
+    z-index: 2;
+    width: 17px;
+    left: 1160px;
+    top: 550px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#termsandpolicyid1 {
+    z-index: 2;
+    color: white;
+    left: 740px;
+    top: 565px;
+    position: absolute;
+}
+
+label {
+    opacity: 0.6;
+}
+
+label a {
+    text-decoration: none;
+    color: #7a05e7;
+}
+
+#signupid {
+    z-index: 5;
+    width: 470px;
+    left: 720px;
+    top: 610px;
+    position: absolute;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.error-message {
+    color: #ff0000;
+    opacity: 0.5;   
+    font-size: 21px;
+}
+
+#name-error {
+    z-index: 3;
+    left: 769px;
+    bottom: 615px;
+    position: absolute;
+}
+
+#surname-error {
+    z-index: 3;
+    left: 1042px;
+    bottom: 615px;
+    position: absolute;
+}
+
+#email-error {
+    z-index: 3;
+    left: 885px;
+    bottom: 535px;
+    position: absolute;
+}
+
+#password-error {
+    z-index: 3;
+    left: 849px;
+    bottom: 455px;
+    position: absolute;
+}
+
+#confirmpassword-error {
+    z-index: 3;
+    left: 1111px;
+    bottom: 455px;
+    position: absolute;
+}
+
+#termsandpolicy-error {
+    z-index: 3;
+    left: 1185px;
+    bottom: 365.52px;
+    opacity: 0.61;
+    position: absolute;
+}

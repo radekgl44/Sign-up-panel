@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up panel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <main>
+        <div class="worldmap">
+            <img src="worldmap.png" alt="" width="1800px">
+        </div>
+
+        <div class="signuppanel">
+            <div class="panelbg"></div>
+
+            <h1 id="signuppaneltitle">SIGN UP</h1>
+
+            <input type="text" name="name" id="nameid" maxlength="20" placeholder="Name*">
+            <span class="error-message" id="name-error"></span>
+
+            <input type="text" name="surname" id="surnameid" maxlength="20" placeholder="Surname*">
+            <span class="error-message" id="surname-error"></span>
+
+            <input type="email" name="email" id="emailid" maxlength="50" placeholder="Email@example.com*">
+            <span class="error-message" id="email-error"></span>
+
+            <input type="password" name="password" id="passwordid" minlength="5" maxlength="20" placeholder="Password (5-20)*">
+            <span class="error-message" id="password-error"></span>
+                <input type="checkbox" onclick="passwordid.type =  this.checked ? 'text': 'password'" id="passwordcheckbox">
+                    <label for="passwordcheckbox" class="passwordcheckboximg" ></label>
+
+            <input type="password" name="confirmpassword" id="confirmpasswordid" minlength="5" maxlength="20" placeholder="Confirm password*">
+            <span class="error-message" id="confirmpassword-error"></span>
+                <input type="checkbox" onclick="confirmpasswordid.type =  this.checked ? 'text': 'password'" id="confirmpasswordcheckbox">
+                    <label for="confirmpasswordcheckbox" class="confirmpasswordcheckboximg" ></label>
+
+            <a href="" class="loginbutton">You have account? Login</a>
+
+            <input type="checkbox" name="termsandpolicy" id="termsandpolicyid">
+            <span class="error-message" id="termsandpolicy-error"></span>    
+            <label for="termsandpolicyid" id="termsandpolicyid1">I agree to the<a href=""> Terms and Conditions </a>and<a href=""> Privacy Policy</a></label>
+                
+            <input type="button" value="Sign up" id="signupid">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
